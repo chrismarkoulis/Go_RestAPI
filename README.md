@@ -9,6 +9,9 @@
 # Install mux router
 go get -u github.com/gorilla/mux
 
+# Install CORS handlers
+go get github.com/gorilla/handlers
+
 # Install MySQL driver
 go get -u github.com/go-sql-driver/mysql
 ```

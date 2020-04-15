@@ -16,7 +16,6 @@ VALUES('John', 'Doe', 'IT'),
 ('Mark', 'Johnson', 'Marketing'),
 ('Jenny', 'Doppler', 'HR');
 
-SELECT * FROM employees;
 
 
 

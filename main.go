@@ -9,6 +9,7 @@ import (
 	"net/http"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
 
@@ -48,8 +49,7 @@ func main() {
 
 	// Run Server
 	fmt.Println("Server running on port :3000...")
-	log.Fatal(http.ListenAndServe(":3000", r))
-
+	log.Fatal(http.ListenAndServe(":3000", handlers.CORS()(r)))
 }
 
 // CRUD Operations
